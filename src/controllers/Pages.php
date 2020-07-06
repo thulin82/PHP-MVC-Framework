@@ -5,11 +5,16 @@
         }
 
         public function index(){
-            $this->view('pages/index', ['title' => 'Welcome to index page']);
+            $data = [
+                'title' => 'Welcome to index page'
+            ];
+            $this->view('pages/index', $data);
         }
 
         public function about(){
-            $this->view('pages/about', ['title' => 'Welcome to about page']);
+            $data = [
+                'title' => 'Welcome to index page'
+            ];
+            $this->view('pages/about', ['title' => $data]);
         }
     }
-    
